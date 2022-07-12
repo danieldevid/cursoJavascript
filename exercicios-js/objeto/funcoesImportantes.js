@@ -6,7 +6,7 @@ const pessoa = {
 }
 console.log(Object.keys(pessoa))// só as chaves 
 console.log(Object.values(pessoa)) // só os valores 
-console.log(Object.entries(pessoa)) // entraga como um Arry 
+console.log(Object.entries(pessoa)) // entrega como um Arry 
 
 Object.entries(pessoa).forEach(([chave, valor])=> {
     console.log(`${chave}: ${valor}`)
