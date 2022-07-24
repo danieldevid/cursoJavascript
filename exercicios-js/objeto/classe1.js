@@ -10,15 +10,15 @@ class CicloFinanceiro {
     constructor(mes, ano ) {
         this.mes = mes
         this.ano = ano
-        this.lancamento = []
+        this.lancamentos = []
     }
-    addLancamentos(...lancamento) {
-        lancamento.forEach(l => this.lancamento.push(l))
+    addLancamentos(...lancamentos) {
+        lancamentos.forEach(l => this.lancamentos.push(l))
     }
 
     sumario() {
         let valorConsolidado = 0 
-        this.lancamento.forEach(l => {
+        this.lancamentos.forEach(l => {
             valorConsolidado += l.valor
         })
         return valorConsolidado
@@ -28,7 +28,7 @@ class CicloFinanceiro {
 
 const salario = new Lancamento ('Salario', 45000)
 const contaDeLuz = new Lancamento('Luz', -220)
-
+const contaAgua = new Lancamento('Agua', -50)
 const contas = new CicloFinanceiro(6, 2018)
-contas.addLancamentos(salario, contaDeLuz)
+contas.addLancamentos(salario, contaDeLuz, contaAgua)
 console.log(contas.sumario())
