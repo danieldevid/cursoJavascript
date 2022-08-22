@@ -1,0 +1,27 @@
+{
+  "name": "lodash",
+  "version": "0.0.1",
+  "description": "nova pasta",
+  "main": "npm guide for beginner",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danieldevid/cursoJavascript.git"
+  },
+  "keywords": [
+    "npm",
+    "example",
+    "beginner"
+  ],
+  "author": "daniel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danieldevid/cursoJavascript/issues"
+  },
+  "homepage": "https://github.com/danieldevid/cursoJavascript#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
