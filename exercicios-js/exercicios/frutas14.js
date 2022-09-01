@@ -16,7 +16,7 @@ const fruta = function (fruta) {
     }
 }
 
-//fruta('maçã')
+fruta('maçã')
 fruta('kiwi')
 fruta('melancia')
 fruta('banana')
