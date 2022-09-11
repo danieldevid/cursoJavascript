@@ -4,7 +4,7 @@ const express = require('express')
 const app = express() 
 
 app.get('/produtos', (req, res, next) => {
-    res.send({ nome: 'Notebook', preco: 123.45 })// COnverte para Json
+    res.send({ nome: 'Notebook', preco: 123.45 })// Converter para Json
     
 })
 
