@@ -5,7 +5,7 @@ const app = express()
 const bancoDeDados = require('./bancoDeDados')
 
 app.get('/produtos', (req, res, next) => {
-    res.send( bancoDeDados.getProdutos())// Converter para Json
+    res.send( bancoDeDados.getProdutos())
     
 })
 
@@ -14,9 +14,9 @@ app.get('./produtos/:id', (req, res, next) => {
 })
 
 app.post('/produtos', (req, res, next) => {
-    const produto = bancoDeDados.salvarProdutos({
-        nome:req.body.name,
-        preco:req.body.preco
+    const produto = bancoDeDados.salvarProduto({
+        nome: req.body.name,
+        preco: req.body.preco
     })
     res.send(produto)// JSON
 })
