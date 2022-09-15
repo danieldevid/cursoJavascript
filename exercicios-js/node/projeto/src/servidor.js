@@ -2,7 +2,10 @@ const porta = 3003
 
 const express = require('express')
 const app = express() 
+const bodyParse = require('body-parser')
 const bancoDeDados = require('./bancoDeDados')
+
+app.use(bodyParse.urlencoded)
 
 app.get('/produtos', (req, res, next) => {
     res.send( bancoDeDados.getProdutos())
