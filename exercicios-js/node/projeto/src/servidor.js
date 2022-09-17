@@ -4,8 +4,9 @@ const express = require('express')
 const app = express() 
 const bodyParse = require('body-parser')
 const bancoDeDados = require('./bancoDeDados')
+const { extend } = require('lodash')
 
-app.use(bodyParse.urlencoded)
+app.use(bodyParse.urlencoded({ extended: true }))
 
 app.get('/produtos', (req, res, next) => {
     res.send( bancoDeDados.getProdutos())
@@ -18,7 +19,7 @@ app.get('./produtos/:id', (req, res, next) => {
 
 app.post('/produtos', (req, res, next) => {
     const produto = bancoDeDados.salvarProduto({
-        nome: req.body.name,
+        nome: req.body.nome,
         preco: req.body.preco
     })
     res.send(produto)// JSON
