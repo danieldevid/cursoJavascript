@@ -2,18 +2,22 @@ const porta = 3003
 
 const express = require('express')
 const app = express() 
-const bodyParser = require('body-parser')
 const bancoDeDados = require('./bancoDeDados')
 const { extend } = require('lodash')
 
-app.use(bodyParser.urlencoded({ extended: true }))
+app.use( express.json() )
+const passoAqui = function(req, res, next ) {
+    console.log('Passou por aqui ')
+    next()
+}
+app.use(passoAqui)
 
 app.get('/produtos', (req, res, next) => {
     res.send( bancoDeDados.getProdutos())
     
 })
 
-app.get('./produtos/:id', (req, res, next) => {
+app.get('/produtos/:id', (req, res, next) => {
     res.send(bancoDeDados.getProduto(req.params.id))
 })
 
