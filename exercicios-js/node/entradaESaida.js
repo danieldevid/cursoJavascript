@@ -4,4 +4,13 @@ console.log(anonimo)
 if (anonimo) {
     process.stdout.write('Fala Anônimo! \n')
     process.exit()
+} else {
+    process.stdout.write('Informe o seu nome: ')
+    process.stdin.on('data',data => {
+        const nome = data.toString().replace('\n', '') 
+        // stdin eventon on data , para pegar aquilo que foi digitado
+
+        process.stdout.write(`Fala ${nome}\n`) // stdout saida padrão 
+        process.exit()
+    } )
 }
