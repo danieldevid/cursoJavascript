@@ -22,3 +22,6 @@ console.log(x,y)
 
 const { idade: i, nome } = { nome:'Ana', idade: 9}
 console.log(i, nome )
+
+const { id, user} = { id: 23, user:'Daniel'}
+console.log(id,user)
