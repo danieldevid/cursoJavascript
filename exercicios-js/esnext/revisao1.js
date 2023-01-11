@@ -6,7 +6,7 @@
     
 }
 
-console.log(a) 
+console.log(a)  
 // variavel acoplada a um var não tem 
 // escopo de bloco 
 //console.log(b) // O contrario acontece aqui 
