@@ -1,7 +1,7 @@
 // ES8: Object.values/Object.entries 
 const obj = { a: 1, b: 2, c:3}
 console.log(Object.values(obj))
-console.log(Object.entries(obj))
+console.log(Object.entries(obj)) // passa um array com chaves  e valores Um array de Arrays
 
 // Melhorias na Notação Literal
 const nome = 'Carla'
