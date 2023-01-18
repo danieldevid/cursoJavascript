@@ -26,3 +26,13 @@ console.log(clone)
 const grupoA = [ 'Daniel', 'Alan', 'Silvio']
 const grupoFinal =  [ 'João', ...grupoA, 'Emersom']
 console.log(grupoFinal)
+
+
+
+
+function real (partes, ...valores) {
+   const resultado = []
+   valores.forEach((valores, resultado) => {
+      
+   })
+}
