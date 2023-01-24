@@ -1,4 +1,6 @@
-const soma = ( a , b ) => a + b / 2
+const { map } = require("lodash");
+
+/*const soma = ( a , b ) => a + b / 2
 
 //Operdaor rest
  function total(...numeros) {
@@ -44,3 +46,11 @@ const preco = 22.99
 const precoParcela = 11
 
 console.log(real `1x de ${preco} ou em 3x de ${precoParcela}`)
+
+
+*/
+const tecnologias = new Map()
+tecnologias.set('react', {framework: false})
+tecnologias.set('angular', {framework: true})
+//console.log(tecnologias.react)
+console.log(tecnologias.get('react').framework)
