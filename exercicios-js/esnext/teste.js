@@ -1,4 +1,4 @@
-const { map } = require("lodash");
+const { map, set, times } = require("lodash");
 
 /*const soma = ( a , b ) => a + b / 2
 
@@ -48,9 +48,22 @@ const precoParcela = 11
 console.log(real `1x de ${preco} ou em 3x de ${precoParcela}`)
 
 
-*/
+
 const tecnologias = new Map()
 tecnologias.set('react', {framework: false})
 tecnologias.set('angular', {framework: true})
 //console.log(tecnologias.react)
-console.log(tecnologias.get('react').framework)
+console.log(tecnologias.get('react').framework)*/
+
+const timeDePernambuco = new Set ()
+timeDePernambuco.add('Santa Cruz ')
+timeDePernambuco.add('Sport').add('Náutico')
+console.log(timeDePernambuco)
+timeDePernambuco.delete('Náutico')
+console.log(timeDePernambuco)
+console.log(timeDePernambuco.size) 
+console.log(timeDePernambuco.has('Santa Cruz'))
+
+const nomes = [ 'Daniel', 'Carlos', 'Joyce', 'Elaine','Elaine','Elaine']
+const nomesSet = new Set(nomes)
+console.log(nomesSet) // retirando assim as repetições 
