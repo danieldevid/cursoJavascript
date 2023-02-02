@@ -33,7 +33,7 @@ for ( let [ ch, vl ] of assuntosMap.entries() ) {
     console.log(ch, vl)
 }
 
-const s = new Set(['a','b','c'])
+const s = new Set(['a','b','c'])  // percorrendo um set
 for (let letra of s) {
     console.log(letra)
 }
